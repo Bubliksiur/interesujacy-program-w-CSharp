@@ -1,0 +1,44 @@
+using System;
+using System.ComponentModel;
+
+namespace interesujace
+{
+    class Program
+    {
+jakis czelendz
+// zmienne
+
+static int hightscore = 300;
+static string hightscorePlayer = "Bubliksiur";
+
+
+// metoda
+public static void CheckHightScore(int score, string playerName)
+{
+    // jezeli
+    if (score > hightscore)
+    {
+        hightscore = score;
+        hightscorePlayer = playerName;
+
+        Console.WriteLine("New hightscore is {0}", score);
+        Console.WriteLine("It is now held by {0}", playerName);
+    }
+    // w przeciwnym razie
+    else
+    {
+        Console.WriteLine("The old hightscore could not be broken. It is still {0} and held by {1}", hightscore, hightscorePlayer) ;
+    }
+}
+
+
+static void Main(string[] args) 
+{
+
+CheckHightScore(250, "Maria");
+CheckHightScore(315, "Michael");
+CheckHightScore(350, "Bubliksiur");
+
+        }
+    }
+} 
