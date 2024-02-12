@@ -5,7 +5,7 @@ namespace interesujace
 {
     class Program
     {
-jakis czelendz
+
 // zmienne
 
 static int hightscore = 300;
